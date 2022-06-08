@@ -1,12 +1,12 @@
 import render, { getCord } from '../modules/render.js';
 
 require('./styles.css');
+
 render();
 const cards = document.querySelectorAll('.card');
 const lists = document.querySelectorAll('.list');
 
-
-const getCardAfterDraggingCard = (list, yDraggingCard)=> {
+const getCardAfterDraggingCard = (list, yDraggingCard) => {
   const listCards = [...list.querySelectorAll('.card:not(.dragging)')];
 
   return listCards.reduce(
@@ -21,7 +21,7 @@ const getCardAfterDraggingCard = (list, yDraggingCard)=> {
     },
     { offset: Number.NEGATIVE_INFINITY },
   ).element;
-}
+};
 
 lists.forEach((list) => {
   list.addEventListener('dragover', (e) => {

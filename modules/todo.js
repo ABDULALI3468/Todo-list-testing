@@ -19,4 +19,3 @@ export default class Todo {
     localStorage.setItem('todos', JSON.stringify(arr));
   };
 }
-
