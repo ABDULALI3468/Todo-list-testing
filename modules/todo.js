@@ -20,5 +20,3 @@ export default class Todo {
   };
 }
 
-// export default Todo;
-// export default Todo;

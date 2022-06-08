@@ -1,18 +1,12 @@
 import render, { getCord } from '../modules/render.js';
-// import TasksBluePrint from '../modules/tasks-functionality';
-
-// const copyTasksBluePrint = new TasksBluePrint();
 
 require('./styles.css');
-
 render();
 const cards = document.querySelectorAll('.card');
 const lists = document.querySelectorAll('.list');
 
-// cards.forEach((card) => {
-//   registerEventsOnCard(card);
-// });
-function getCardAfterDraggingCard(list, yDraggingCard) {
+
+const getCardAfterDraggingCard = (list, yDraggingCard)=> {
   const listCards = [...list.querySelectorAll('.card:not(.dragging)')];
 
   return listCards.reduce(
@@ -44,23 +38,6 @@ lists.forEach((list) => {
     }
   });
 });
-
-// function getCardAfterDraggingCard(list, yDraggingCard) {
-//   const listCards = [...list.querySelectorAll('.card:not(.dragging)')];
-
-//   return listCards.reduce(
-//     (closestCard, nextCard) => {
-//       const nextCardRect = nextCard.getBoundingClientRect();
-//       const offset = yDraggingCard - nextCardRect.top - nextCardRect.height / 2;
-
-//       if (offset < 0 && offset > closestCard.offset) {
-//         return { offset, element: nextCard };
-//       }
-//       return closestCard;
-//     },
-//     { offset: Number.NEGATIVE_INFINITY },
-//   ).element;
-// }
 
 function registerEventsOnCard(card) {
   card.addEventListener('dragstart', () => {
