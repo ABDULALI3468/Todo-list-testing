@@ -39,6 +39,10 @@ To get a local copy up and running follow these simple steps:
 - npm run start
 - Your web browser will open on localhost:8080
 
+## PROJECT TESTING
+
+- npm test or 
+- npm run watch
 ## Authors
 
 👤 **Abdul Ali**
