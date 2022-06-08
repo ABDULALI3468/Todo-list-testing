@@ -1,4 +1,4 @@
-import TasksBluePrint from '../modules/tasks-functionality';
+import TasksBluePrint from '../modules/tasks-functionality.js';
 import newObj from '../modules/mock-local.js';
 
 document.body.innerHTML = `
