@@ -49,6 +49,12 @@ To get a local copy up and running follow these simple steps:
 
 - GitHub: [@ABDULALI3468](https://github.com/ABDULALI3468)
 
+
+👤 **Olawale Olapetan**
+- Github [@wale-prog](https://github.com/wale-prog)
+- LinkedIn [@walepetan](https://www.linkedin.com/in/walepetan/)
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
